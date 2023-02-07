@@ -17,3 +17,21 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int x = rand()%4;
+	int y = a;
+	if(x==0) a = a;
+	else if(x==1){
+		a = b;
+		b = y;
+	} 
+	else if(x==2){
+		a = c;
+		c = y;
+	} 
+	else{
+		a = d;
+		d = y;
+	}
+}
